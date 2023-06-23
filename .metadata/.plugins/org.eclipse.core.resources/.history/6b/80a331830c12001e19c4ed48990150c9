@@ -1,0 +1,18 @@
+ /******************************************************************************
+ *
+ * Module: Distance Measurement
+ *
+ * File Name: App.c
+ *
+ * Description: Source file for the App
+ *
+ * Author : Ahmed Gamal
+ *******************************************************************************/
+# include "ultrasonic.h"
+# include "icu.h"
+# include "lcd.h"
+
+int main()
+{
+	LCD_init();/* initialize LCD driver*/
+}

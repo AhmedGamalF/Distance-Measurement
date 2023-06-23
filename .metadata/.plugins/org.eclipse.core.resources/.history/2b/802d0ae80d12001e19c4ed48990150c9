@@ -1,0 +1,29 @@
+/******************************************************************************
+ *
+ * Module: Distance Measurement
+ *
+ * File Name: App.c
+ *
+ * Description: Source file for the App
+ *
+ * Author : Ahmed Gamal
+ *******************************************************************************/
+# include "ultrasonic.h"
+# include "icu.h"
+# include "lcd.h"
+
+int main()
+{
+	uint16 distance = 0;
+	LCD_init(); /* initialize LCD driver*/
+	Ultrasonic_init(); /* initialize Ultrasonic driver*/
+	LCD_displayString("Distance =    cm");
+	LCD_moveCursor(0, 11);
+	while(1)
+	{
+		/* read the Distance*/
+		distance = Ultrasonic_readDistance();
+		/* Display the distance*/
+		LCD_intgerToString(distance);
+	}
+}

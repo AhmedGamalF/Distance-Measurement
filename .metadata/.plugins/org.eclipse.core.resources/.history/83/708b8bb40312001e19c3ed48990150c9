@@ -1,0 +1,20 @@
+ /******************************************************************************
+ *
+ * Module: Ultrasonic
+ *
+ * File Name: ultrasonic.h
+ *
+ * Description: Header file for the Ultrasonic driver
+ *
+ * Author : Ahmed Gamal
+ *
+ *******************************************************************************/
+
+#ifndef ULTRASONIC_H_
+#define ULTRASONIC_H_
+
+ void Ultrasonic_init(void);
+
+
+
+#endif /* ULTRASONIC_H_ */
